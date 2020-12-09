@@ -203,7 +203,7 @@ Last, the fitted model is $$\hat{bwt} = 28.3735\times\hat{babysex}+131.0228\time
 
 ```{r diagnostics}
 
-brithw_data %>% 
+birthw_data %>% 
   modelr::add_residuals(aic_res2) %>% 
   modelr::add_predictions(aic_res2) %>% 
   ggplot(aes(pred, resid))+
